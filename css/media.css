@@ -697,7 +697,7 @@
 		border-bottom: 1px solid #fff;
 		margin: 0;
 	}
-	.footer br {
+	.footer .row > div > br {
 		display: none;
 	}
 	.footer__nav_big li {
