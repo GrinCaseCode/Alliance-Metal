@@ -1011,6 +1011,13 @@
 	.item-catalog__image {
 		height: 240px;
 	}
+	.item-review__title {
+    font-size: 17px;
+    line-height: 27px;
+}
+.row_catalog > div {
+    margin-bottom: 25px;
+}
 }
 
 /* Extra Small Devices, Phones */
