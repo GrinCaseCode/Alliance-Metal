@@ -56,6 +56,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		{
 			breakpoint: 992,
 			settings: {
+				adaptiveHeight: true,
 				slidesToShow: 1,
 			}
 		}

@@ -870,7 +870,7 @@
 		color: #333;
 	}
 	.menu-mobile .list-social {
-		margin-top: 15px;
+		margin-top: 25px;
 		font-size: 19px;
 	}
 }
@@ -1008,6 +1008,9 @@
 	.item-dropdown .table-main {
 		margin-left: -15px;
 	}
+	.item-catalog__image {
+		height: 240px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -1117,6 +1120,7 @@
 		line-height: 13px;
 		margin-top: 18px;
 	}
+
 }
 
 /* Custom, iPhone Retina */
