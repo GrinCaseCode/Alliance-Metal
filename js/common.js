@@ -103,16 +103,38 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 
 
-	$(".item-dropdown__head .link-page").click(function(e) {
+	$(".item-dropdown__head").click(function(e) {
 		e.preventDefault();
-		$(this).parent().parent().toggleClass("active");
-		$(this).parent().siblings(".item-dropdown__content").slideToggle(200);
-		if ($(this).parent().parent().hasClass("active")) {
-			$(this).html("Свернуть");
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".item-dropdown__content").slideToggle(200);
+		if ($(this).parent().hasClass("active")) {
+			$(this).find(".link-page").html("Свернуть");
 		} else {
-			$(this).html("Подробнее");
+			$(this).find(".link-page").html("Подробнее");
 		}
 	});
+
+	$(".item-dropdown__head .link-page").click(function(e) {
+		e.preventDefault();
+	});
+
+/*
+	$(".vacancies .item-dropdown__head").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().hasClass("active")) {
+			$(this).find(".link-page").html("По итогам собеседования");
+		} else {
+			$(this).find(".link-page").html("Подробнее");
+		}
+	});
+*/
+
+	/*input file*/
+  $("input[type='file']").change(function(){
+    var filename_text = $(this).parent().siblings(".name-upload");
+    var filename = $(this).val().replace(/.*\\/, "");
+    filename_text.html(filename);
+  });
 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
