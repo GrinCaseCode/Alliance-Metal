@@ -431,7 +431,16 @@
 	.news-page {
 		padding-bottom: 90px;
 	}
+	.gost .item-dropdown__title {
+		font-size: 22px;
+	}
+	.article__left h2 {
+		font-size: 29px;
+		line-height: 42px;
+		margin-bottom: 30px;
+	}
 }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.menu {
@@ -984,9 +993,9 @@
 		padding-bottom: 60px;
 	}
 	.header_page .menu ul {
-    background: transparent;
-    backdrop-filter: none;
-}
+		background: transparent;
+		backdrop-filter: none;
+	}
 	.menu ul {
 		width: 100%;
 		visibility: visible;
@@ -1003,6 +1012,43 @@
 	}
 	.menu__haschild > a::after {
 		transition: all 0.3s;
+	}
+	.link-wrap {
+		margin-right: 20px;
+	}
+	.gost .item-dropdown__title {
+		font-size: 19px;
+	}
+	.doc-item {
+		margin-bottom: 15px;
+	}
+	.gost .descr-big {
+		margin-bottom: 20px;
+	}
+	.date-article {
+		margin-bottom: 20px;
+		margin-top: 10px;
+		line-height: 23px;
+	}
+	.article__left img {
+		margin-bottom: 20px;
+	}
+	.article__left ul {
+		padding-bottom: 15px;
+	}
+	.article__left h2 {
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	.article__left {
+		padding-bottom: 20px;
+	}
+	.article .page-news {
+		margin-bottom: 20px;
+	}
+	.article {
+		padding-bottom: 40px;
 	}
 }
 
@@ -1170,10 +1216,25 @@
 		padding-right: 40px;
 	}
 	#callback .name-form {
-    font-size: 29px;
-    line-height: 41px;
-}
+		font-size: 29px;
+		line-height: 41px;
+	}
 
+	.link-wrap {
+		margin-right: 10px;
+		min-width: initial;
+	}
+	.gost .item-dropdown__title {
+		font-size: 17px;
+	}
+	.item-dropdown__title img {
+		max-width: 18px;
+		margin-right: 10px;
+	}
+	.descr-big {
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -1338,9 +1399,28 @@
 		padding-right: 15px;
 	}
 	#callback .name-form {
-    font-size: 24px;
-    line-height: 33px;
-}
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.gost .item-dropdown__title {
+		font-size: 16px;
+	}
+	.breadcrumbs {
+		font-size: 13px;
+	}
+	.article__left img {
+		border-radius: 14px;
+	}
+	.article__left h2 {
+		font-size: 20px;
+		line-height: 27px;
+	}
+	.article__left {
+		padding-bottom: 10px;
+	}
+	.article {
+		padding-bottom: 30px;
+	}
 }
 
 /* Custom, iPhone Retina */
