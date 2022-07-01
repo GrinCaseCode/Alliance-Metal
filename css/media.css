@@ -1281,8 +1281,9 @@
 		font-size: 14px;
 		line-height: 24px;
 	}
+	.title-contact:first-child,
 	.title-contact {
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	#map-contacts {
 		height: 380px;
@@ -1296,6 +1297,9 @@
 		font-size: 20px;
 		line-height: 29px;
 		max-width: 439px;
+	}
+	.contacts-main {
+		padding-top: 10px;
 	}
 }
 
