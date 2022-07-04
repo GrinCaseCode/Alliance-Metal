@@ -42,6 +42,18 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).siblings("ul").slideToggle(200);
 	});
 
+
+	$(".unit-category .btn-main").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).siblings("ul").find("li:nth-child(n+6)").slideToggle(200);
+		if ($(this).hasClass("active")) {
+			$(this).find("span").html("Скрыть");
+		} else {
+			$(this).find("span").html("Смотреть все");
+		}
+	});
+
 	//слайдер
 
 	$('.slider-reviews').slick({
@@ -127,14 +139,14 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(this).find(".link-page").html("Подробнее");
 		}
 	});
-*/
+	*/
 
 	/*input file*/
-  $("input[type='file']").change(function(){
-    var filename_text = $(this).parent().siblings(".name-upload");
-    var filename = $(this).val().replace(/.*\\/, "");
-    filename_text.html(filename);
-  });
+	$("input[type='file']").change(function(){
+		var filename_text = $(this).parent().siblings(".name-upload");
+		var filename = $(this).val().replace(/.*\\/, "");
+		filename_text.html(filename);
+	});
 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");

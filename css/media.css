@@ -192,6 +192,14 @@
 		max-width: 490px;
 		padding-bottom: 50px;
 	}
+	.advantages .container::before,
+	.advantages::after  {
+	transform: scale(0.8);
+		transform-origin: 100% 100%;
+}
+.advantages .container::before {
+		transform-origin: 0 0;
+}
 }
 @media only screen and (max-width : 1450px) {
 	body {
@@ -464,7 +472,7 @@
 	}
 	.value-contact_big {
 		font-size: 14px;
-	}
+}
 }
 
 /* Large Devices, Wide Screens */
@@ -1096,6 +1104,13 @@
 	.title-contact {
 		font-size: 17px;
 	}
+	.wrapper {
+		overflow: hidden;
+	}
+	.block-sticky {
+		position: static;
+		top: 0;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -1301,6 +1316,12 @@
 	.contacts-main {
 		padding-top: 10px;
 	}
+	.advantages::after {
+    background-position: right bottom 260px;
+}
+.advantages .container::before  {
+	display: none;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1496,6 +1517,11 @@
 		line-height: 27px;
 		max-width: 330px;
 	}
+.advantages::after {
+    transform: scale(1);
+        	background-size: 240px auto;
+background-position: right 20px bottom 100px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -1545,4 +1571,8 @@
 	.container {
 		max-width: 1470px;
 	}
+}
+
+@media (min-width: 1900px) {
+
 }
