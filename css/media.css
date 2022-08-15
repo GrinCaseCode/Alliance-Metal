@@ -194,12 +194,20 @@
 	}
 	.advantages .container::before,
 	.advantages::after  {
-	transform: scale(0.8);
+		transform: scale(0.8);
 		transform-origin: 100% 100%;
-}
-.advantages .container::before {
+	}
+	.advantages .container::before {
 		transform-origin: 0 0;
-}
+	}
+
+	.title-page {
+		font-size: 32px;
+		line-height: 50px;
+	}
+	.card .title-page {
+		margin-bottom: 55px;
+	}
 }
 @media only screen and (max-width : 1450px) {
 	body {
@@ -472,7 +480,21 @@
 	}
 	.value-contact_big {
 		font-size: 14px;
-}
+	}
+
+	.title-page {
+		font-size: 28px;
+		line-height: 35px;
+	}
+	.card .title-page {
+		margin-bottom: 40px;
+	}
+	.row_card {
+		margin-top: 35px;
+	}
+	.tabs_card a {
+		min-width: 300px;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -703,6 +725,25 @@
 	.thanks {
 		padding-top: 90px;
 		padding-bottom: 125px;
+	}
+
+	.title-page {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.row_feature {
+		margin-bottom: 13px;
+	}
+	.row_card {
+		margin-top: 20px;
+	}
+	.tabs_card {
+		margin-top: 35px;
+	}
+	.title-small {
+		font-size: 18px;
+		line-height: 27px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -1111,6 +1152,21 @@
 		position: static;
 		top: 0;
 	}
+
+	.card .title-page {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.tabs_card {
+		margin-top: 25px;
+	}
+	.card {
+		padding-bottom: 40px;
+	}
+	.tab-container_card p,
+	.tab-container_card ul {
+		margin-bottom: 14px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -1317,12 +1373,25 @@
 		padding-top: 10px;
 	}
 	.advantages::after {
-    background-position: right bottom 260px;
+		background-position: right bottom 260px;
+	}
+	.advantages .container::before  {
+		display: none;
+	}
+
+	.price-main {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.row_card .btn-main {
+		min-width: 180px;
+	}
+	.tabs_card a {
+		min-width: 100%;
+		margin: 0;
+	}
 }
-.advantages .container::before  {
-	display: none;
-}
-}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -1517,11 +1586,11 @@
 		line-height: 27px;
 		max-width: 330px;
 	}
-.advantages::after {
-    transform: scale(1);
-        	background-size: 240px auto;
-background-position: right 20px bottom 100px;
-    }
+	.advantages::after {
+		transform: scale(1);
+		background-size: 240px auto;
+		background-position: right 20px bottom 100px;
+	}
 }
 
 /* Custom, iPhone Retina */
